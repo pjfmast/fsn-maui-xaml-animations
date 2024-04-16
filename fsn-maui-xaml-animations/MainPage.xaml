@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="fsn_maui_xaml_animations.MainPage">
+
+    <Grid ColumnDefinitions="auto, *">
+        <StackLayout Grid.Column="0" Spacing="5">
+            <Button Text="Rotate" Clicked="OnRotateAnimation" />
+            <Button Text="Scale" Clicked="OnScaleAnimation" />
+            <Button Text="ScaleAndRotate" Clicked="OnScaleAndRotateAnimation" />
+            <Button Text="TranslateAndRotate" Clicked="OnTranslateAndRotate" />
+            <Button Text="ScaleAndFade" Clicked="OnScaleAndFade" />
+            <Button Text="Cancel animation" Clicked="OnCancel" />
+        </StackLayout>
+        <Label x:Name="animatedLabel"
+               Grid.Column="1"
+               TextColor="Blue"
+               Text=".NET MAUI"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               FontSize="Large" />
+    </Grid>
+
+</ContentPage>
